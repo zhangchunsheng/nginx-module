@@ -64,3 +64,14 @@ chkconfig --add nginx
 service nginx start
 service nginx stop
 service nginx reload
+
+sudo vim /etc/sysconfig/i18n
+LANG="en_US.UTF-8"
+SYSFONT=latarcyrheb-sun16
+
+vim ~/.vimrc
+set shiftwidth=4        " 自动缩进宽度
+set tabstop=4           " tab等同的空格数量
+set expandtab           " 使用空格代替tab键
+
+sudo vim /root/.vimrc
