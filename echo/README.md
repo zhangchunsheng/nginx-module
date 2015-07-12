@@ -52,3 +52,15 @@ Configuration summary
   nginx http fastcgi temporary files: "fastcgi_temp"
   nginx http uwsgi temporary files: "uwsgi_temp"
   nginx http scgi temporary files: "scgi_temp"
+
+
+/usr/local/nginx/sbin/nginx
+/usr/local/nginx/sbin/nginx -s stop
+
+cp nginx /etc/init.d/
+chmod 755 /etc/init.d/nginx
+chkconfig --add nginx
+
+service nginx start
+service nginx stop
+service nginx reload
