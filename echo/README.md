@@ -75,3 +75,10 @@ set tabstop=4           " tab等同的空格数量
 set expandtab           " 使用空格代替tab键
 
 sudo vim /root/.vimrc
+
+upstream backend {
+    ip_hash;
+    server ip:9990;
+}
+
+pass_proxy http://backend
